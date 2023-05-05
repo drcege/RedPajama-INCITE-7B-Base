@@ -56,6 +56,15 @@ widely considered to be the father of modern computer science and artificial int
 
 This requires a GPU with 12GB memory.
 
+To run inference with int8, please ensure you have installed accelerate and bitandbytes. You can install them with the following command:
+
+```bash
+pip install accelerate
+pip install bitsandbytes
+```
+
+Then you can run inference with int8 as follows:
+
 ```python
 import torch
 import transformers
