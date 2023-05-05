@@ -6,19 +6,14 @@ language:
 
 # RedPajama-Base-INCITE-6.9B
 
-TODO:
-
-> TLDR: RedPajama-Base-INCITE-6.9B is a 6.9B parameter language model.
-
-RedPajama-Base-INCITE-6.9B is TODO.
+RedPajama-Base-INCITE-6.9B-v1, is a large transformer-based language model developed by Together Computer and trained on the RedPajama-Data-1T dataset.
 
 ## Model Details
 - **Developed by**: Together Computer.
 - **Model type**: Language Model
 - **Language(s)**: English
 - **License**: Apache 2.0
-- **Model Description**: A 6.9B parameter open source language model.
-- **Resources for more information**: TODO.
+- **Model Description**: A 6.9B parameter pretrained language model.
 
 # Quick Start
 
@@ -85,22 +80,17 @@ Excluded uses are described below.
 
 ### Misuse, Malicious Use, and Out-of-Scope Use
 
-TODO:
-The OpenChatKit community provides RedPajama-Base-INCITE-6.9B as an open source tool for building chatbots. 
-The community is not responsible for any misuse, malicious use, or out-of-scope use of the model. 
 It is the responsibility of the end user to ensure that the model is used in a responsible and ethical manner.
 
 #### Out-of-Scope Use
 
-TODO:
-RedPajama-Base-INCITE-6.9B is designed for use in chatbot applications and may not perform well for other use cases outside of its intended scope. 
+RedPajama-Base-INCITE-6.9B is a language model and may not perform well for other use cases outside of its intended scope. 
 For example, it may not be suitable for use in safety-critical applications or for making decisions that have a significant impact on individuals or society. 
 It is important to consider the limitations of the model and to only use it for its intended purpose.
 
 #### Misuse and Malicious Use
 
-TODO:
-RedPajama-Base-INCITE-6.9B is designed for use in chatbot applications and should not be used for any other purpose.
+RedPajama-Base-INCITE-6.9B is designed for language modeling.
 Misuse of the model, such as using it to engage in illegal or unethical activities, is strictly prohibited and goes against the principles of the OpenChatKit community project.
 
 Using the model to generate content that is cruel to individuals is a misuse of this model. This includes, but is not limited to:
@@ -117,8 +107,7 @@ Using the model to generate content that is cruel to individuals is a misuse of 
 
 ## Limitations
 
-TODO:
-RedPajama-Base-INCITE-6.9B, like other language model-based chatbots, has limitations that should be taken into consideration. 
+RedPajama-Base-INCITE-6.9B, like other language models, has limitations that should be taken into consideration. 
 For example, the model may not always provide accurate or relevant answers, particularly for questions that are complex, ambiguous, or outside of its training data. 
 We therefore welcome contributions from individuals and organizations, and encourage collaboration towards creating a more robust and inclusive chatbot.
 
