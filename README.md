@@ -178,6 +178,10 @@ Please refer to [togethercomputer/RedPajama-Data-1T](https://huggingface.co/data
 - **Num of Tokens:** 800B Tokens
 - **Learning rate:** 0.00012
 
+## Benchmark
+
+Please refer to our [blog post](https://together.xyz) for benchmark results.
+
 ## Community
 
 Join us on [Together Discord](https://discord.gg/6ZVDU8tTD4)
