@@ -119,11 +119,12 @@ Please refer to [togethercomputer/RedPajama-Data-1T](https://huggingface.co/data
 
 **Training Procedure**
 
-- **Hardware:** TODO @Dan
-- **Optimizer:** 
-- **Gradient Accumulations**: 
+- **Hardware:** 512 nodes of 6xV100 (IBM Power9), on the OLCF Summit cluster
+- **Optimizer:** Apex FusedAdam
+- **Parallelism:** Pipeline parallel 12, model parallel 2
+- **Gradient Accumulations**: 8 (global batch size 4M tokens)
 - **Num of Tokens:** 800B Tokens
-- **Learning rate:** 
+- **Learning rate:** 0.00012
 
 ## Community
 
