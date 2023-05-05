@@ -8,7 +8,8 @@ datasets:
 
 # RedPajama-INCITE-Base-7B-v0.1
 
-RedPajama-INCITE-Base-7B-v0.1, is a large transformer-based language model developed by Together Computer and trained on the RedPajama-Data-1T dataset.
+RedPajama-INCITE-Base-7B-v0.1 was developed by Together and leaders from the open-source AI community including Ontocord.ai, ETH DS3Lab, AAI CERC, Université de Montréal, MILA - Québec AI Institute, Stanford Center for Research on Foundation Models (CRFM), Stanford Hazy Research research group and LAION. 
+The training was done on 3,072 V100 GPUs provided as part of the INCITE 2023 project on Scalable Foundation Models for Transferrable Generalist AI, awarded to MILA, LAION, and EleutherAI in fall 2022, with support from the Oak Ridge Leadership Computing Facility (OLCF) and INCITE program. 
 
 ## Model Details
 - **Developed by**: Together Computer.
