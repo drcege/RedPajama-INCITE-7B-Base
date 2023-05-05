@@ -19,7 +19,7 @@ RedPajama-Base-INCITE-6.9B-v1, is a large transformer-based language model devel
 
 ## GPU Inference
 
-This requires a GPU with 8GB memory.
+This requires a GPU with 16GB memory.
 ```python
 from transformers import AutoTokenizer, AutoModelForCausalLM
 # init
@@ -35,7 +35,7 @@ print(output_str)
 
 ## GPU Inference in Int8
 
-This requires a GPU with 6GB memory.
+This requires a GPU with 12GB memory.
 
 ```python
 from transformers import AutoTokenizer, AutoModelForCausalLM
