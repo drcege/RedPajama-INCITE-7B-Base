@@ -4,9 +4,9 @@ language:
 - en
 ---
 
-# RedPajama-Base-INCITE-6.9B
+# RedPajama-INCITE-Base-7B-v0.1
 
-RedPajama-Base-INCITE-6.9B-v1, is a large transformer-based language model developed by Together Computer and trained on the RedPajama-Data-1T dataset.
+RedPajama-INCITE-Base-7B-v0.1, is a large transformer-based language model developed by Together Computer and trained on the RedPajama-Data-1T dataset.
 
 ## Model Details
 - **Developed by**: Together Computer.
@@ -34,8 +34,8 @@ MIN_TRANSFORMERS_VERSION = '4.25.1'
 assert transformers.__version__ >= MIN_TRANSFORMERS_VERSION, f'Please upgrade transformers to version {MIN_TRANSFORMERS_VERSION} or higher.'
 
 # init
-tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-Base-INCITE-6.9B-v1")
-model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-Base-INCITE-6.9B-v1", torch_dtype=torch.float16)
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1")
+model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1", torch_dtype=torch.float16)
 model = model.to('cuda:0')
 # infer
 prompt = "Alan Turing is"
@@ -76,8 +76,8 @@ MIN_TRANSFORMERS_VERSION = '4.25.1'
 assert transformers.__version__ >= MIN_TRANSFORMERS_VERSION, f'Please upgrade transformers to version {MIN_TRANSFORMERS_VERSION} or higher.'
 
 # init
-tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-Base-INCITE-6.9B-v1")
-model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-Base-INCITE-6.9B-v1", device_map='auto', torch_dtype=torch.float16, load_in_8bit=True)
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1")
+model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1", device_map='auto', torch_dtype=torch.float16, load_in_8bit=True)
 
 # infer
 prompt = "Alan Turing is"
@@ -106,8 +106,8 @@ MIN_TRANSFORMERS_VERSION = '4.25.1'
 assert transformers.__version__ >= MIN_TRANSFORMERS_VERSION, f'Please upgrade transformers to version {MIN_TRANSFORMERS_VERSION} or higher.'
 
 # init
-tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-Base-INCITE-6.9B-v1")
-model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-Base-INCITE-6.9B-v1", torch_dtype=torch.bfloat16)
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1")
+model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1", torch_dtype=torch.bfloat16)
 # infer
 prompt = "Alan Turing is"
 inputs = tokenizer(prompt, return_tensors='pt').to(model.device)
@@ -145,13 +145,13 @@ It is the responsibility of the end user to ensure that the model is used in a r
 
 #### Out-of-Scope Use
 
-RedPajama-Base-INCITE-6.9B is a language model and may not perform well for other use cases outside of its intended scope. 
+`RedPajama-INCITE-Base-7B-v0.1` is a language model and may not perform well for other use cases outside of its intended scope. 
 For example, it may not be suitable for use in safety-critical applications or for making decisions that have a significant impact on individuals or society. 
 It is important to consider the limitations of the model and to only use it for its intended purpose.
 
 #### Misuse and Malicious Use
 
-RedPajama-Base-INCITE-6.9B is designed for language modeling.
+`RedPajama-INCITE-Base-7B-v0.1` is designed for language modeling.
 Misuse of the model, such as using it to engage in illegal or unethical activities, is strictly prohibited and goes against the principles of the OpenChatKit community project.
 
 Using the model to generate content that is cruel to individuals is a misuse of this model. This includes, but is not limited to:
@@ -168,7 +168,7 @@ Using the model to generate content that is cruel to individuals is a misuse of 
 
 ## Limitations
 
-RedPajama-Base-INCITE-6.9B, like other language models, has limitations that should be taken into consideration. 
+`RedPajama-INCITE-Base-7B-v0.1`, like other language models, has limitations that should be taken into consideration. 
 For example, the model may not always provide accurate or relevant answers, particularly for questions that are complex, ambiguous, or outside of its training data. 
 We therefore welcome contributions from individuals and organizations, and encourage collaboration towards creating a more robust and inclusive chatbot.
 
