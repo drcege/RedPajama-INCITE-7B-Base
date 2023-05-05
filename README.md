@@ -2,6 +2,8 @@
 license: apache-2.0
 language:
 - en
+datasets:
+- togethercomputer/RedPajama-Data-1T
 ---
 
 # RedPajama-INCITE-Base-7B-v0.1
