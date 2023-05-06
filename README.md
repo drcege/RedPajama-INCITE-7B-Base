@@ -132,14 +132,6 @@ Please note that since `LayerNormKernelImpl` is not implemented in fp16 for CPU,
 
 ## Direct Use 
 
-The model is intended for research purposes. Possible research areas and tasks include
-
-- Safe deployment of models which have the potential to generate harmful content.
-- Probing and understanding the limitations and biases of dialogue models or language models.
-- Generation of artworks and use in design and other artistic processes.
-- Applications in educational or creative tools.
-- Research on dialogue models or language models.
-
 Excluded uses are described below.
 
 ### Misuse, Malicious Use, and Out-of-Scope Use
