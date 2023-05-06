@@ -155,7 +155,7 @@ It is important to consider the limitations of the model and to only use it for 
 #### Misuse and Malicious Use
 
 `RedPajama-INCITE-Base-7B-v0.1` is designed for language modeling.
-Misuse of the model, such as using it to engage in illegal or unethical activities, is strictly prohibited and goes against the principles of the OpenChatKit community project.
+Misuse of the model, such as using it to engage in illegal or unethical activities, is strictly prohibited and goes against the principles of the project.
 
 Using the model to generate content that is cruel to individuals is a misuse of this model. This includes, but is not limited to:
 
