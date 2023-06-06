@@ -6,14 +6,14 @@ datasets:
 - togethercomputer/RedPajama-Data-1T
 ---
 
-# RedPajama-INCITE-Base-7B-v0.1
+# RedPajama-INCITE-7B-Base
 
-RedPajama-INCITE-Base-7B-v0.1 was developed by Together and leaders from the open-source AI community including Ontocord.ai, ETH DS3Lab, AAI CERC, Université de Montréal, MILA - Québec AI Institute, Stanford Center for Research on Foundation Models (CRFM), Stanford Hazy Research research group and LAION. 
+RedPajama-INCITE-7B-Base was developed by Together and leaders from the open-source AI community including Ontocord.ai, ETH DS3Lab, AAI CERC, Université de Montréal, MILA - Québec AI Institute, Stanford Center for Research on Foundation Models (CRFM), Stanford Hazy Research research group and LAION. 
 The training was done on 3,072 V100 GPUs provided as part of the INCITE 2023 project on Scalable Foundation Models for Transferrable Generalist AI, awarded to MILA, LAION, and EleutherAI in fall 2022, with support from the Oak Ridge Leadership Computing Facility (OLCF) and INCITE program. 
 
-  - Base Model: [RedPajama-INCITE-Base-7B-v0.1](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-7B-v0.1)
-  - Instruction-tuned Version: [RedPajama-INCITE-Instruct-7B-v0.1](https://huggingface.co/togethercomputer/RedPajama-INCITE-Instruct-7B-v0.1)
-  - Chat Version: [RedPajama-INCITE-Chat-7B-v0.1](https://huggingface.co/togethercomputer/RedPajama-INCITE-Chat-7B-v0.1)
+  - Base Model: [RedPajama-INCITE-7B-Base](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base)
+  - Instruction-tuned Version: [RedPajama-INCITE-7B-Instruct](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Instruct)
+  - Chat Version: [RedPajama-INCITE-7B-Chat](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Chat)
 
 
 ## Model Details
@@ -42,8 +42,8 @@ MIN_TRANSFORMERS_VERSION = '4.25.1'
 assert transformers.__version__ >= MIN_TRANSFORMERS_VERSION, f'Please upgrade transformers to version {MIN_TRANSFORMERS_VERSION} or higher.'
 
 # init
-tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1")
-model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1", torch_dtype=torch.float16)
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-7B-Base")
+model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-7B-Base", torch_dtype=torch.float16)
 model = model.to('cuda:0')
 # infer
 prompt = "Alan Turing is"
@@ -84,8 +84,8 @@ MIN_TRANSFORMERS_VERSION = '4.25.1'
 assert transformers.__version__ >= MIN_TRANSFORMERS_VERSION, f'Please upgrade transformers to version {MIN_TRANSFORMERS_VERSION} or higher.'
 
 # init
-tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1")
-model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1", device_map='auto', torch_dtype=torch.float16, load_in_8bit=True)
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-7B-Base")
+model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-7B-Base", device_map='auto', torch_dtype=torch.float16, load_in_8bit=True)
 
 # infer
 prompt = "Alan Turing is"
@@ -114,8 +114,8 @@ MIN_TRANSFORMERS_VERSION = '4.25.1'
 assert transformers.__version__ >= MIN_TRANSFORMERS_VERSION, f'Please upgrade transformers to version {MIN_TRANSFORMERS_VERSION} or higher.'
 
 # init
-tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1")
-model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Base-7B-v0.1", torch_dtype=torch.bfloat16)
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-7B-Base")
+model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-7B-Base", torch_dtype=torch.bfloat16)
 # infer
 prompt = "Alan Turing is"
 inputs = tokenizer(prompt, return_tensors='pt').to(model.device)
@@ -145,13 +145,13 @@ It is the responsibility of the end user to ensure that the model is used in a r
 
 #### Out-of-Scope Use
 
-`RedPajama-INCITE-Base-7B-v0.1` is a language model and may not perform well for other use cases outside of its intended scope. 
+`RedPajama-INCITE-7B-Base` is a language model and may not perform well for other use cases outside of its intended scope. 
 For example, it may not be suitable for use in safety-critical applications or for making decisions that have a significant impact on individuals or society. 
 It is important to consider the limitations of the model and to only use it for its intended purpose.
 
 #### Misuse and Malicious Use
 
-`RedPajama-INCITE-Base-7B-v0.1` is designed for language modeling.
+`RedPajama-INCITE-7B-Base` is designed for language modeling.
 Misuse of the model, such as using it to engage in illegal or unethical activities, is strictly prohibited and goes against the principles of the project.
 
 Using the model to generate content that is cruel to individuals is a misuse of this model. This includes, but is not limited to:
@@ -168,7 +168,7 @@ Using the model to generate content that is cruel to individuals is a misuse of 
 
 ## Limitations
 
-`RedPajama-INCITE-Base-7B-v0.1`, like other language models, has limitations that should be taken into consideration. 
+`RedPajama-INCITE-7B-Base`, like other language models, has limitations that should be taken into consideration. 
 For example, the model may not always provide accurate or relevant answers, particularly for questions that are complex, ambiguous, or outside of its training data. 
 We therefore welcome contributions from individuals and organizations, and encourage collaboration towards creating a more robust and inclusive chatbot.
 
@@ -184,7 +184,7 @@ Please refer to [togethercomputer/RedPajama-Data-1T](https://huggingface.co/data
 - **Optimizer:** Apex FusedAdam
 - **Parallelism:** Pipeline parallel 12, tensor parallel 2
 - **Gradient Accumulations**: 8 (global batch size 4M tokens)
-- **Num of Tokens:** 800B Tokens
+- **Num of Tokens:** 1T Tokens
 - **Learning rate:** 0.00012
 
 ## Benchmark
