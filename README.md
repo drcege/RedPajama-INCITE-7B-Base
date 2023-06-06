@@ -191,6 +191,23 @@ Please refer to [togethercomputer/RedPajama-Data-1T](https://huggingface.co/data
 
 Please refer to our [blog post](https://together.xyz) for benchmark results.
 
+## Intermediate Checkpoints
+
+We provide 11 intermediate checkpoints that have been released for study.
+The checkpoints are organized based on the number of tokens they contain, ranging from 240 billion tokens to 1 trillion tokens.
+
+- [240b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/240b_tokens)
+- [280b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/280b_tokens)
+- [400b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/400b_tokens)
+- [440b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/440b_tokens)
+- [500b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/500b_tokens)
+- [600b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/600b_tokens)
+- [700b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/700b_tokens)
+- [720b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/720b_tokens)
+- [960b_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/960b_tokens)
+- [1t_tokens](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/1t_tokens)
+- [latest](https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/main)
+
 ## Community
 
 Join us on [Together Discord](https://discord.gg/6ZVDU8tTD4)
